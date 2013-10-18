@@ -1,0 +1,12 @@
+﻿<Window x:Class="SkyNetTools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SkyNetTools" Height="180" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock TextWrapping="Wrap" FontSize="13">Makefile을 지정하면 all: 에 지정된 모든 하위 프로젝트를 packages 디렉터리에 zip 파일로 생성합니다.</TextBlock>
+            <Button Margin="40,20" Height="34" FontSize="16" Click="Button_Click">SkyNetTools 최고!</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
