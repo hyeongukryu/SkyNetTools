@@ -39,8 +39,8 @@ namespace SkyNetTools
                 if (result == true)
                 {
                     Process(dialog.FileName);
+                    MessageBox.Show("작업 성공 최고!", "이거 최고예요!", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
-                MessageBox.Show("작업 성공 최고!", "이거 최고예요!", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch
             {
@@ -129,7 +129,7 @@ namespace SkyNetTools
             {
                 File.Delete(zipPath);
             }
-            
+
             using (FileStream zipFile = new FileStream(zipPath, FileMode.Create))
             {
                 using (ZipArchive archive = new ZipArchive(zipFile, ZipArchiveMode.Create))
