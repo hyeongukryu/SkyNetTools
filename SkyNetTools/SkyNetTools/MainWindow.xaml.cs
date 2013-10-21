@@ -94,7 +94,7 @@ namespace SkyNetTools
 
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine("# Makefile");
-                sb.AppendLine("");
+                sb.AppendLine("#");
                 sb.AppendLine(string.Format("a.out: {0}", string.Join(" ", projectFiles)));
 
                 var tokens = projectCommand.Split(new[] { " " }, StringSplitOptions.None);
@@ -116,6 +116,12 @@ namespace SkyNetTools
                     var fullPath = Path.Combine(directory, path);
                     zipEntries.Add(path, File.ReadAllBytes(fullPath));
                 }
+
+                if (zipEntries.Count < 2)
+                {
+                    zipEntries.Add("_empty_.cc", new byte[] { });
+                }
+
                 zipEntries.Add("Makefile", Encoding.UTF8.GetBytes(sb.ToString()));
 
                 var zipPath = Path.Combine(outputDirecetory, projectName + ".zip");
