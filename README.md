@@ -20,7 +20,7 @@ https://github.com/mintrupt/SkyNetTools/raw/master/release/SkyNetTools.exe
 SkyNetTools를 실행하기 위해서는 .NET Framework 4.5가 필요합니다.
 .NET Framework는 아래 주소에서 다운로드할 수 있습니다.
 
-http://www.microsoft.com/net/downloads
+https://www.microsoft.com/net/download/
 
 SkyNetTools 개발에 참여하기
 ===========
