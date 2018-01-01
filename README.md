@@ -31,7 +31,7 @@ SkyNetTools 개발에 참여하기
 =======
 이 프로그램은 GNU General Public License version 3.0 (GPLv3)에 따라 배포됩니다.
 
-Copyright (C) 2013 류형욱
+Copyright (C) 2013, 2018 류형욱
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
